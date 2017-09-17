@@ -1,0 +1,25 @@
+PURPOSE:
+
+This small program uses the GCE (Google Compute Engine) API to validate that preemptive instances are running.
+
+
+SETUP:
+
+git clone git@github.com:nkelling/GCEApp.git
+
+Create a virtualenv with Python 2.7.x
+    Ubuntu: virtualenv -p <python exe> <directory>
+    Mac: pyenv virtualenv <directory>
+
+Activate the virtualenv:
+    source <virtualenv dir>/bin/activate
+
+Pip install the Google API Python client package
+    pip install google-api-python-client
+
+Create Google service account keys for your account default SA
+    https://cloud.google.com/iam/docs/creating-managing-service-account-keys
+
+Download the .json file and store it under the keys/ directory
+
+Edit main.py to create your GceApp account objects *examples provided*
